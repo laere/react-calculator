@@ -380,6 +380,7 @@ body {
   box-shadow: 2px 2px 6px #999; }
   #container .btn {
     margin-right: 8px;
+    margin-bottom: 32px;
     border: none;
     padding: 16px 24px;
     color: #fff;

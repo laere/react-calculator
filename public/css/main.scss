@@ -1,0 +1,55 @@
+@import 'bourbon/bourbon';
+@import '_normalize';
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+$main-font: 'Inconsolata', sans-serif;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px
+  font-family: $main-font;
+  background-color: #444;
+}
+
+*,*:after,*:before {
+  box-sizing: border-box;
+
+}
+
+body {
+  line-height: 1.5;
+}
+
+#container {
+  background-color: #fff;
+  max-width: 940px;
+  height: 550px;
+  margin: 156px auto;
+  font-size:  2rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 6px #999;
+  .btn {
+    margin-right: 8px;
+    border: none;
+    padding: 16px 24px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #333;
+    border-bottom: 5px solid #3e3e3e;
+  }
+  .clear {
+    background-color: firebrick;
+    border-bottom: 5px solid #A01E1E;
+  }
+  input[type=text] {
+    border: 1px solid #999;
+    width: 250px;
+    height: 50px;
+  }
+  .result {
+    margin-bottom: 16px;
+  }
+}

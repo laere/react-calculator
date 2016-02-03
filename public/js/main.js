@@ -19074,17 +19074,26 @@ var Calculator = React.createClass({
 
   render: function () {
 
-    var resultStyle = {
-      backgroundColor: 'red',
-      width: '100px',
-      height: '100px'
-    };
-
     return React.createElement(
       'div',
       { className: 'calc' },
+      React.createElement(
+        'h2',
+        null,
+        'Calculate:'
+      ),
       React.createElement(NumberField, { ref: 'number1', placeholder: '123' }),
+      React.createElement('br', null),
       React.createElement(NumberField, { ref: 'number2', placeholder: '1234' }),
+      React.createElement('br', null),
+      React.createElement(
+        'h2',
+        null,
+        'Result:'
+      ),
+      React.createElement('input', { className: 'result', type: 'text', placeholder: 'result', value: this.state.value, readOnly: true }),
+      React.createElement('br', null),
+      React.createElement('br', null),
       React.createElement(
         'button',
         { className: 'btn', type: 'button', value: '+', onClick: this.onClick },
@@ -19105,10 +19114,9 @@ var Calculator = React.createClass({
         { className: 'btn', type: 'button', value: '/', onClick: this.onClick },
         ' / Divide '
       ),
-      React.createElement('input', { style: resultStyle, placeholder: 'result', value: this.state.value, readOnly: true }),
       React.createElement(
         'button',
-        { className: 'btn', type: 'button', onClick: this.clearInputFields },
+        { className: 'btn clear', type: 'button', onClick: this.clearInputFields },
         ' Clear '
       )
     );

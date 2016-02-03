@@ -40,26 +40,27 @@ var Calculator = React.createClass({
 
     render: function() {
 
-      var resultStyle = {
-        backgroundColor: 'red',
-        width: '100px',
-        height: '100px'
-      };
 
       return (
         <div className="calc">
-
+          <h2>Calculate:</h2>
           <NumberField ref="number1" placeholder="123" />
+          <br />
           <NumberField ref="number2" placeholder='1234' />
 
+          <br />
+          <h2>Result:</h2>
+          <input className="result" type="text" placeholder="result" value={this.state.value} readOnly />
+
+          <br />
+          <br />
           <button className="btn" type="button" value="+" onClick={this.onClick}> + Add </button>
           <button className="btn" type="button" value="-" onClick={this.onClick}> - Subtract </button>
           <button className="btn" type="button" value="*" onClick={this.onClick}> * Multiply </button>
           <button className="btn" type="button" value="/" onClick={this.onClick}> / Divide </button>
 
-          <input style={resultStyle} placeholder="result" value={this.state.value} readOnly />
 
-          <button className="btn" type="button" onClick={this.clearInputFields}> Clear </button>
+          <button className="btn clear" type="button" onClick={this.clearInputFields}> Clear </button>
 
         </div>
       );

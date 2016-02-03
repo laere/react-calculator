@@ -2,8 +2,8 @@ var React = require('react');
 
 var NumberField = React.createClass({
     //Set initial state value for input
-    setInitialState: function() {
-      this.setState({value: ''});
+    getInitialState: function() {
+      return({value: ''});
     },
     //Detects any changes in state value
     onChange: function(e) {
@@ -17,7 +17,7 @@ var NumberField = React.createClass({
     render: function() {
       return (
           <div>
-              <input type='text' value={this.state.value} onChange={this.onChange} />
+              <input type='text' placeholder={'NUMBER: ' + this.props.placeholder} value={this.state.value} onChange={this.onChange} />
           </div>
       );
     }

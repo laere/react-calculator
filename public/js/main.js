@@ -19082,9 +19082,9 @@ var Calculator = React.createClass({
         null,
         'Calculate:'
       ),
-      React.createElement(NumberField, { ref: 'number1', placeholder: '123' }),
+      React.createElement(NumberField, { ref: 'number1', placeholder: 'first number' }),
       React.createElement('br', null),
-      React.createElement(NumberField, { ref: 'number2', placeholder: '1234' }),
+      React.createElement(NumberField, { ref: 'number2', placeholder: 'second number' }),
       React.createElement('br', null),
       React.createElement(
         'h2',
@@ -19148,7 +19148,7 @@ var NumberField = React.createClass({
     return React.createElement(
       'div',
       null,
-      React.createElement('input', { type: 'text', placeholder: 'NUMBER: ' + this.props.placeholder, value: this.state.value, onChange: this.onChange })
+      React.createElement('input', { type: 'text', placeholder: this.props.placeholder, value: this.state.value, onChange: this.onChange })
     );
   }
 });

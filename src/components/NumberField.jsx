@@ -17,7 +17,7 @@ var NumberField = React.createClass({
     render: function() {
       return (
           <div>
-              <input type='text' placeholder={'NUMBER: ' + this.props.placeholder} value={this.state.value} onChange={this.onChange} />
+              <input type='text' placeholder={this.props.placeholder} value={this.state.value} onChange={this.onChange} />
           </div>
       );
     }

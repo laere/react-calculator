@@ -44,9 +44,9 @@ var Calculator = React.createClass({
       return (
         <div className="calc">
           <h2>Calculate:</h2>
-          <NumberField ref="number1" placeholder="123" />
+          <NumberField ref="number1" placeholder="first number" />
           <br />
-          <NumberField ref="number2" placeholder='1234' />
+          <NumberField ref="number2" placeholder='second number' />
 
           <br />
           <h2>Result:</h2>

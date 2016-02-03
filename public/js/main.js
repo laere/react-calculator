@@ -1,0 +1,1 @@
+console.error("SyntaxError: C:/Users/Zack/Desktop/react-calculator/src/components/Calculator.jsx: JSX value should be either an expression or a quoted JSX text (35:23) while parsing file: C:\\Users\\Zack\\Desktop\\react-calculator\\src\\components\\Calculator.jsx");
